@@ -77,6 +77,8 @@ const prompt = ChatPromptTemplate.fromMessages([
 // Create a chain
 const chain = prompt.pipe(llm).pipe(new StringOutputParser());
 
+// const chain = prompt | llm | new StringOutputParser();
+
 console.log("Chain created");
 
 // Main function
